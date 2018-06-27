@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="831.0" prefWidth="1368.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dji.controllers.DJIMainController">
+	<top>
+		<fx:include fx:id="header" source="Header.fxml" />
+	</top>
+	<center>
+		<TabPane prefHeight="635.0" prefWidth="981.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+			<tabs>
+				<Tab text="Overview">
+					<content>
+						<fx:include fx:id="overViewTab" source="OverviewTab.fxml" />
+					</content>
+				</Tab>
+				<Tab text="Google Map">
+					<content>
+						<fx:include fx:id="mapTab" source="MapTab.fxml" />
+					</content>
+				</Tab>
+				<Tab text="Flight Control">
+					<content>
+						<fx:include fx:id="flightControl" source="FlightControl.fxml" />
+					</content>
+				</Tab>
+				<Tab text="Battery">
+					<content>
+						<fx:include fx:id="batteryTab" source="BatteryTab.fxml" />
+					</content>
+				</Tab>
+			</tabs>
+		</TabPane>
+	</center>
+	<bottom>
+		<AnchorPane prefHeight="49.0" prefWidth="1178.0" BorderPane.alignment="CENTER" />
+	</bottom>
+</BorderPane>
