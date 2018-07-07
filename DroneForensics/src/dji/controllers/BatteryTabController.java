@@ -29,7 +29,7 @@ public class BatteryTabController {
 			String timeDate = getList.get(i).getUpdateTime();
 			String[] split = timeDate.split(" ");
 			int battery = Integer.parseInt(getList.get(i).getSbBattery());
-			System.out.println(split[1] + " " +  battery);
+			// System.out.println(split[1] + " " + battery);
 			series1.getData().add(new XYChart.Data<>(split[1], battery));
 			i++;
 		}

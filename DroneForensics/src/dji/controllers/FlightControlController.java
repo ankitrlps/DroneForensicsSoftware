@@ -37,7 +37,7 @@ public class FlightControlController {
 		helpText.setText("'10' - Assisted Take Off \n'6' - Flying (GPS) \n'11' - Auto Take Off \n'12' - Auto Landing");
 
 		XYChart.Series<String, Number> series1 = new XYChart.Series<>();
-		series1.setName("Signal Strength Over Time");
+		series1.setName("Flight Control Over Time");
 
 		for (DjiParameters values : list) {
 			String timeDate = values.getUpdateTime();

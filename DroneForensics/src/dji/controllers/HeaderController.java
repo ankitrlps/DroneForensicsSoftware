@@ -123,6 +123,8 @@ public class HeaderController {
 				
 				djiMainController.getListForBattery(paramValues);
 				
+				djiMainController.getListForSpeed(paramValues);
+				
 				
 			} catch (IOException io) {
 				Logger.getLogger(HeaderController.class.getName()).log(Level.SEVERE, null, io);
