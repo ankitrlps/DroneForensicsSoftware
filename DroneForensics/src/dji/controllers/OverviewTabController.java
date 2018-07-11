@@ -12,7 +12,7 @@ public class OverviewTabController {
 	@FXML
 	Text distanceTravelled, flightDate, flightLength, maxAlt, droneType, crtlBy, batteryPercent, batterySerial,
 			batteryType, volConsumption, batteryProductDate, flightLoc, aircraftName, aircraftSerialNo, photosTaken,
-			videoTime, maxSatellites, homeLoc, djiAppLoc, djiAppOsVersion, rcSerialNo, cameraSerialNo;
+			videoTime, maxSatellites, homeLoc, djiAppLoc, djiAppOsVersion, rcSerialNo, cameraSerialNo, maxSpeed;
 
 	DJIMainController djiMainController;
 
@@ -84,6 +84,8 @@ public class OverviewTabController {
 		volConsumption.setText(list.get(10).getSbVoltage() + "%" + " - " + list.get(lastIndex).getSbVoltage() + "%");
 
 		batteryProductDate.setText(list.get(10).getCbProductDate());
+		
+		maxSpeed.setText(list.get(2).getdMaxHSpeed());
 		
 	/*	String timeDate = list.get(0).getUpdateTime();
 		System.out.println("time dte " + timeDate);

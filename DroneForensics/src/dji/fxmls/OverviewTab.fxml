@@ -184,7 +184,7 @@
 				<Font name="System Bold Italic" size="20.0" />
 			</font>
 		</Label>
-		<Label layoutX="44.0" layoutY="527.0" text="Max. Satellites Used:">
+		<Label layoutX="599.0" layoutY="511.0" text="Max. Satellites Used:">
 			<font>
 				<Font name="System Bold Italic" size="20.0" />
 			</font>
@@ -209,7 +209,7 @@
 				<Font size="20.0" />
 			</font>
 		</Text>
-		<Text fx:id="maxSatellites" layoutX="245.0" layoutY="548.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="113.00000485777855">
+		<Text fx:id="maxSatellites" layoutX="800.0" layoutY="532.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="113.00000485777855">
 			<font>
 				<Font size="20.0" />
 			</font>
@@ -239,5 +239,15 @@
 				<Font size="20.0" />
 			</font>
 		</Text>
+      <Label layoutX="41.0" layoutY="526.0" text="Max. Speed:">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Text fx:id="maxSpeed" layoutX="166.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="113.00000485777855">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
 	</children>
 </AnchorPane>
