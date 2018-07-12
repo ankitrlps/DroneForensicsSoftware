@@ -5,14 +5,15 @@
 <?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="638.0" prefWidth="1229.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dji.controllers.SpeedTabController">
+
+<AnchorPane prefHeight="648.0" prefWidth="1318.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="dji.controllers.AltitudeTabController">
    <children>
-      <LineChart fx:id="lineChart" layoutX="14.0" layoutY="96.0" prefHeight="477.0" prefWidth="1146.0" title="Speed Over Time">
+      <LineChart fx:id="lineChart" layoutX="26.0" layoutY="57.0" prefHeight="556.0" prefWidth="1267.0" title="Altitude Over Time">
         <xAxis>
           <CategoryAxis label="Time (hh:mm:ss:ms)" side="BOTTOM" fx:id="xAxis" />
         </xAxis>
         <yAxis>
-          <NumberAxis fx:id="yAxis" label="Speed (meters/second)" side="LEFT" />
+          <NumberAxis fx:id="yAxis" label="Altitude (meters)" side="LEFT" />
         </yAxis>
       </LineChart>
    </children>

@@ -5,7 +5,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="729.0" prefWidth="1161.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dji.controllers.OverviewTabController">
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="729.0" prefWidth="1620.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dji.controllers.OverviewTabController">
 	<children>
 		<Text fx:id="flightLength" layoutX="220.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="241.6708984375">
 			<font>
@@ -79,52 +79,52 @@
 				<Font size="20.0" />
 			</font>
 		</Text>
-		<Label layoutX="601.0" layoutY="361.0" text="Battery Percentage ( Start - End ): ">
+		<Label layoutX="669.0" layoutY="359.0" text="Battery Percentage ( Start - End ): ">
 			<font>
 				<Font name="System Bold Italic" size="20.0" />
 			</font>
 		</Label>
-		<Text fx:id="batteryPercent" layoutX="922.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="208.99999225325882">
+		<Text fx:id="batteryPercent" layoutX="990.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="208.99999225325882">
 			<font>
 				<Font size="20.0" />
 			</font>
 		</Text>
-		<Label layoutX="602.0" layoutY="286.0" text="Battery Serial No:">
+		<Label layoutX="670.0" layoutY="284.0" text="Battery Serial No:">
 			<font>
 				<Font name="System Bold Italic" size="20.0" />
 			</font>
 		</Label>
-		<Text fx:id="batterySerial" layoutX="773.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="231.00000634789467">
+		<Text fx:id="batterySerial" layoutX="841.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="231.00000634789467">
 			<font>
 				<Font size="20.0" />
 			</font>
 		</Text>
-		<Label layoutX="601.0" layoutY="323.0" text="Battery Type: ">
+		<Label layoutX="669.0" layoutY="321.0" text="Battery Type: ">
 			<font>
 				<Font name="System Bold Italic" size="20.0" />
 			</font>
 		</Label>
-		<Label layoutX="599.0" layoutY="398.0" text="Voltage Consumption ( Start - End ): ">
+		<Label layoutX="667.0" layoutY="396.0" text="Voltage Consumption ( Start - End ): ">
 			<font>
 				<Font name="System Bold Italic" size="20.0" />
 			</font>
 		</Label>
-		<Text fx:id="batteryType" layoutX="733.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="159.00000661611557">
+		<Text fx:id="batteryType" layoutX="801.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="159.00000661611557">
 			<font>
 				<Font size="20.0" />
 			</font>
 		</Text>
-		<Text fx:id="volConsumption" layoutX="948.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="178.9999930858612">
+		<Text fx:id="volConsumption" layoutX="1016.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="178.9999930858612">
 			<font>
 				<Font size="20.0" />
 			</font>
 		</Text>
-		<Text fx:id="batteryProductDate" layoutX="810.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="172.00000128149986">
+		<Text fx:id="batteryProductDate" layoutX="878.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="172.00000128149986">
 			<font>
 				<Font size="20.0" />
 			</font>
 		</Text>
-		<Label layoutX="600.0" layoutY="436.0" text="Battery Product Date: ">
+		<Label layoutX="668.0" layoutY="434.0" text="Battery Product Date: ">
 			<font>
 				<Font name="System Bold Italic" size="20.0" />
 			</font>
@@ -159,32 +159,32 @@
 				<Font name="System Bold Italic" size="20.0" />
 			</font>
 		</Label>
-		<Label layoutX="601.0" layoutY="136.0" text="Camera Serial No.:">
+		<Label layoutX="669.0" layoutY="134.0" text="Camera Serial No.:">
 			<font>
 				<Font name="System Bold Italic" size="20.0" />
 			</font>
 		</Label>
-		<Label layoutX="602.0" layoutY="174.0" text="RC Serial No.:">
+		<Label layoutX="670.0" layoutY="172.0" text="RC Serial No.:">
 			<font>
 				<Font name="System Bold Italic" size="20.0" />
 			</font>
 		</Label>
-		<Label layoutX="602.0" layoutY="211.0" text="DJIGo App OS &amp; App Version:">
+		<Label layoutX="670.0" layoutY="209.0" text="DJIGo App OS &amp; App Version:">
 			<font>
 				<Font name="System Bold Italic" size="20.0" />
 			</font>
 		</Label>
-		<Label layoutX="601.0" layoutY="475.0" text="Home Location (Lat &amp; Long):">
+		<Label layoutX="669.0" layoutY="473.0" text="Home Location (Lat &amp; Long):">
 			<font>
 				<Font name="System Bold Italic" size="20.0" />
 			</font>
 		</Label>
-		<Label layoutX="601.0" layoutY="247.0" text="DJIGo App Location (Lat &amp; Long):">
+		<Label layoutX="669.0" layoutY="245.0" text="DJIGo App Location (Lat &amp; Long):">
 			<font>
 				<Font name="System Bold Italic" size="20.0" />
 			</font>
 		</Label>
-		<Label layoutX="599.0" layoutY="511.0" text="Max. Satellites Used:">
+		<Label layoutX="667.0" layoutY="509.0" text="Max. Satellites Used:">
 			<font>
 				<Font name="System Bold Italic" size="20.0" />
 			</font>
@@ -209,32 +209,32 @@
 				<Font size="20.0" />
 			</font>
 		</Text>
-		<Text fx:id="maxSatellites" layoutX="800.0" layoutY="532.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="113.00000485777855">
+		<Text fx:id="maxSatellites" layoutX="868.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="113.00000485777855">
 			<font>
 				<Font size="20.0" />
 			</font>
 		</Text>
-		<Text fx:id="homeLoc" layoutX="879.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="271.99998585134745">
+		<Text fx:id="homeLoc" layoutX="947.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="271.99998585134745">
 			<font>
 				<Font size="20.0" />
 			</font>
 		</Text>
-		<Text fx:id="djiAppLoc" layoutX="922.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="231.00000655651093">
+		<Text fx:id="djiAppLoc" layoutX="990.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="231.00000655651093">
 			<font>
 				<Font size="20.0" />
 			</font>
 		</Text>
-		<Text fx:id="djiAppOsVersion" layoutX="889.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="211.99999776482582">
+		<Text fx:id="djiAppOsVersion" layoutX="957.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="211.99999776482582">
 			<font>
 				<Font size="20.0" />
 			</font>
 		</Text>
-		<Text fx:id="rcSerialNo" layoutX="742.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="307.9999848585576">
+		<Text fx:id="rcSerialNo" layoutX="810.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="307.9999848585576">
 			<font>
 				<Font size="20.0" />
 			</font>
 		</Text>
-		<Text fx:id="cameraSerialNo" layoutX="784.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="308.0000029653311">
+		<Text fx:id="cameraSerialNo" layoutX="852.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="308.0000029653311">
 			<font>
 				<Font size="20.0" />
 			</font>

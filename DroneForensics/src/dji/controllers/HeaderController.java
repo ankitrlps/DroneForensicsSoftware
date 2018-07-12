@@ -125,6 +125,14 @@ public class HeaderController {
 				
 				djiMainController.getListForSpeed(paramValues);
 				
+				djiMainController.getListForRPY(paramValues);
+				
+				djiMainController.getListForAltitude(paramValues);
+				
+				djiMainController.getListForRPYGimbal(paramValues);
+				
+				djiMainController.getListForSat(paramValues);
+				
 				
 			} catch (IOException io) {
 				Logger.getLogger(HeaderController.class.getName()).log(Level.SEVERE, null, io);

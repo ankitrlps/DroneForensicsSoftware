@@ -18,6 +18,10 @@ public class DJIMainController {
 	@FXML private FlightControlController flightControlController;
 	@FXML private BatteryTabController batteryTabController;
 	@FXML private SpeedTabController speedTabController;
+	@FXML private DroneRollPitchYawController rpyDroneTabController;
+	@FXML private AltitudeTabController altitudeTabController;
+	@FXML private RollPitchYawGimbalController rpyGimbalController;
+	@FXML private SatellitesNumberController satelliteNumberController;
 	
 	@FXML private ImageView view;	
 	
@@ -47,4 +51,19 @@ public class DJIMainController {
 		speedTabController.dislaySpeed(getList);
 	}
 	
+	public void getListForRPY(List<DjiParameters> getList) {
+		rpyDroneTabController.dislayDroneRPY(getList);
+	}
+	
+	public void getListForAltitude(List<DjiParameters> getList) {
+		altitudeTabController.dislayDroneAltitude(getList);
+	}
+	
+	public void getListForRPYGimbal(List<DjiParameters> getList) {
+		rpyGimbalController.dislayGimbalRPY(getList);
+	}
+	
+	public void getListForSat(List<DjiParameters> getList) {
+		satelliteNumberController.displaySatellites(getList);
+	}
 }

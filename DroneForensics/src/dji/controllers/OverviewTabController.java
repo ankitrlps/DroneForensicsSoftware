@@ -85,7 +85,7 @@ public class OverviewTabController {
 
 		batteryProductDate.setText(list.get(10).getCbProductDate());
 		
-		maxSpeed.setText(list.get(2).getdMaxHSpeed());
+		maxSpeed.setText(list.get(2).getdMaxHSpeed() + " m/s");
 		
 	/*	String timeDate = list.get(0).getUpdateTime();
 		System.out.println("time dte " + timeDate);

@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane prefHeight="831.0" prefWidth="1368.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dji.controllers.DJIMainController">
+<BorderPane prefHeight="899.0" prefWidth="1625.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dji.controllers.DJIMainController">
 	<top>
 		<fx:include fx:id="header" source="Header.fxml" />
 	</top>
@@ -33,9 +33,39 @@
 						<fx:include fx:id="batteryTab" source="BatteryTab.fxml" />
 					</content>
 				</Tab>
+				<Tab text="Drone Roll Pitch Yaw">
+					<content>
+						<fx:include fx:id="rpyDroneTab" source="RollPitchYawDrone.fxml" />
+					</content>
+				</Tab>
 				<Tab text="Speed">
 					<content>
 						<fx:include fx:id="speedTab" source="SpeedTab.fxml" />
+					</content>
+				</Tab>
+				<Tab text="Altitude">
+					<content>
+						<fx:include fx:id="altitudeTab" source="AltitudeTab.fxml" />
+					</content>
+				</Tab>
+				<Tab text="3D Model Rotations">
+					<content>
+						<fx:include fx:id="3dRotation" source="3DRotation.fxml" />
+					</content>
+				</Tab>
+				<Tab text="Gimbal Roll Pitch Yaw">
+					<content>
+						<fx:include fx:id="rpyGimbal" source="RollPitchYawGimbal.fxml" />
+					</content>
+				</Tab>
+				<Tab text="Meta-Data">
+					<content>
+						<fx:include fx:id="metaData" source="MetaData.fxml" />
+					</content>
+				</Tab>
+				<Tab text="Satellite Number">
+					<content>
+						<fx:include fx:id="satelliteNumber" source="SatellitesNumber.fxml" />
 					</content>
 				</Tab>
 			</tabs>

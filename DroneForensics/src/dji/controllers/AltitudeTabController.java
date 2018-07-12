@@ -9,23 +9,22 @@ import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 
-public class SpeedTabController {
-
+public class AltitudeTabController {
+	
 	@FXML LineChart<String, Number> lineChart;
 	@FXML CategoryAxis xAxis;
 	@FXML NumberAxis yAxis;
-	
-	public void dislaySpeed(List<DjiParameters> list) {
-		
+
+	public void dislayDroneAltitude(List<DjiParameters> list) {
 		XYChart.Series<String, Number> series = new XYChart.Series<>();
-		series.setName("Speed");
+		series.setName("Altitude");
 
 		for (DjiParameters values : list) {
 			String timeDate = values.getUpdateTime();
 			String[] split = timeDate.split(" ");
-			float flyState = Float.parseFloat(values.gethSpeed());
+			int altitude = Integer.parseInt(values.getOsdAltitude());
 
-			series.getData().add(new XYChart.Data<>(split[1], (flyState * 10)));
+			series.getData().add(new XYChart.Data<>(split[1], altitude));
 		}
 		lineChart.getData().add(series);
 	}
