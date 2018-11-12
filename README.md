@@ -9,4 +9,4 @@ Primarily, digital drone forensics is performed on DJI Phantom 4 drone. But ther
 IDE: Eclipse (Newer version preferred).
 Java 8 or newer version of Java.
 
-1. Installing https://www.eclipse.org/efxclipse/install.html
+1. Download and install JavaFx dependency into Eclipse by following instructions through this link - https://www.eclipse.org/efxclipse/install.html
