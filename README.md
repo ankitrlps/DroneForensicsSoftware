@@ -11,6 +11,8 @@ Java 8 or newer version of Java.
 JavaFx 8.0
 Build Tool: Maven
 
+Follow the below steps for setting up the project and running the application:
+
 -- Download and install JavaFx dependency into Eclipse by following instructions mentioned in this link - https://www.eclipse.org/efxclipse/install.html
 -- Clone this project to your local directory.
 -- Import it to your Eclipse IDE.
