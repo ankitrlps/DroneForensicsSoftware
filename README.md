@@ -1,4 +1,4 @@
-# DroneForensicsSoftware
+# Digital Drone Forensics Software
 
 This desktop application developed using JavaFx is intended to provide the idea of performing Digital Drone Forensics on Drones. 
 
