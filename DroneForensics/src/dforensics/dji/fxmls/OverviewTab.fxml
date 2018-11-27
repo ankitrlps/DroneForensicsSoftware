@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="729.0" prefWidth="1620.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dforensics.dji.controllers.OverviewTabController">
+	<children>
+		<Text fx:id="flightLength" layoutX="220.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="241.6708984375">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Label layoutX="45.0" layoutY="311.0" prefHeight="30.0" prefWidth="242.0" text="Total Distance Travelled:">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<!-- <Button layoutX="374.0" layoutY="36.0" mnemonicParsing="false" onAction="#distance" 
+			text="Button" /> -->
+		<Label layoutX="44.0" layoutY="275.0" prefHeight="30.0" prefWidth="179.0" text="Total Flight Time: ">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="45.0" layoutY="238.0" prefHeight="30.0" prefWidth="135.0" text="Date of Flight">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Text fx:id="flightDate" layoutX="294.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="241.67088590562344">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Text fx:id="distanceTravelled" layoutX="289.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="252.6708984375">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Label layoutX="180.0" layoutY="243.0" prefHeight="21.0" prefWidth="113.0" text="(yyyy-mm-dd) :">
+			<font>
+				<Font name="System Bold Italic" size="15.0" />
+			</font>
+		</Label>
+		<Text fx:id="maxAlt" layoutX="186.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="137.0">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Label layoutX="29.0" layoutY="23.0" prefHeight="32.0" prefWidth="172.0" text="Flight Details">
+			<font>
+				<Font name="System Bold" size="25.0" />
+			</font>
+		</Label>
+		<Label layoutX="45.0" layoutY="202.0" text="Drone Type:">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="46.0" layoutY="345.0" text="Max. Altitude: ">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Text fx:id="droneType" layoutX="164.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="212.00000128149986">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Label layoutX="46.0" layoutY="382.0" text="Controlled By:">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Text fx:id="crtlBy" layoutX="182.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="349.0000080105383">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Label layoutX="669.0" layoutY="359.0" text="Battery Percentage ( Start - End ): ">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Text fx:id="batteryPercent" layoutX="990.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="208.99999225325882">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Label layoutX="670.0" layoutY="284.0" text="Battery Serial No:">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Text fx:id="batterySerial" layoutX="841.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="231.00000634789467">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Label layoutX="669.0" layoutY="321.0" text="Battery Type: ">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="667.0" layoutY="396.0" text="Voltage Consumption ( Start - End ): ">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Text fx:id="batteryType" layoutX="801.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="159.00000661611557">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Text fx:id="volConsumption" layoutX="1016.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="178.9999930858612">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Text fx:id="batteryProductDate" layoutX="878.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="172.00000128149986">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Label layoutX="668.0" layoutY="434.0" text="Battery Product Date: ">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="48.0" layoutY="130.0" text="Aircraft Name:">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="47.0" layoutY="167.0" prefHeight="30.0" prefWidth="172.0" text="Aircraft Serial No:">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="45.0" layoutY="419.0" text="Flight Location:">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Text fx:id="flightLoc" layoutX="198.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="271.9999885261059">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Label layoutX="45.0" layoutY="455.0" prefHeight="30.0" prefWidth="209.0" text="No. of Photos Taken: ">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="44.0" layoutY="491.0" text="Total Video Time:">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="669.0" layoutY="134.0" text="Camera Serial No.:">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="670.0" layoutY="172.0" text="RC Serial No.:">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="670.0" layoutY="209.0" text="DJIGo App OS &amp; App Version:">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="669.0" layoutY="473.0" text="Home Location (Lat &amp; Long):">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="669.0" layoutY="245.0" text="DJIGo App Location (Lat &amp; Long):">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="667.0" layoutY="509.0" text="Max. Satellites Used:">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Label>
+		<Text fx:id="aircraftName" layoutX="196.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="194.00000220537186">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Text fx:id="aircraftSerialNo" layoutX="223.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="252.6708880662918">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Text fx:id="photosTaken" layoutX="245.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="129.00000211410224">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Text fx:id="videoTime" layoutX="214.0" layoutY="514.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="159.00002431869507">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Text fx:id="maxSatellites" layoutX="868.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="113.00000485777855">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Text fx:id="homeLoc" layoutX="947.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="271.99998585134745">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Text fx:id="djiAppLoc" layoutX="990.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="231.00000655651093">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Text fx:id="djiAppOsVersion" layoutX="957.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="211.99999776482582">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Text fx:id="rcSerialNo" layoutX="810.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="307.9999848585576">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Text fx:id="cameraSerialNo" layoutX="852.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="308.0000029653311">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+      <Label layoutX="41.0" layoutY="526.0" text="Max. Speed:">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Text fx:id="maxSpeed" layoutX="166.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="113.00000485777855">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+	</children>
+</AnchorPane>
