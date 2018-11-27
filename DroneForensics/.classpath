@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+<<<<<<< HEAD
 	<classpathentry including="**/*.java" kind="src" output="target/classes" path="src">
 		<attributes>
 			<attribute name="optional" value="true"/>
@@ -19,4 +20,14 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/arenduchintala/Downloads/JFX3DModelImporters_EA_2014-02-09/jim3dsModelImporterJFX.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
+=======
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/jars/openCSV/opencsv-3.8.jar"/>
+	<classpathentry kind="lib" path="C:/jars/metadata-extractor-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/jars/xmpcore-5.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ankit/Downloads/JFX3DModelImporters_EA_2014-02-09/jim3dsModelImporterJFX.jar"/>
+	<classpathentry kind="output" path="bin"/>
+>>>>>>> branch 'master' of https://github.com/ankitrlps/DroneForensicsSoftware.git
 </classpath>

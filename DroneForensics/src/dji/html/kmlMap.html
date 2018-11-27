@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0">
+<meta charset="utf-8">
+<title>KML Layers</title>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+	integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	crossorigin="anonymous"></script>
+<style>
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+	height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+</style>
+</head>
+<body>
+	<div id="map"></div>
+	<script>
+    
+     function ValidURL(url) {
+		  var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
+	  '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.?)+[a-z]{2,}|'+ // domain name
+	  '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+	  '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
+	  '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
+	  '(\\#[-a-z\\d_]*)?$','i'); // fragment locater
+		  if(pattern.test(url)) {
+		    return true;
+		  } else {
+		    return false;
+		  }
+		}
+		
+
+      function initMap() {
+ 			var parts = {};
+			parts = location.search.split("=");
+  			var initialUrl = parts[1];
+  			var replaceInitialUrl = initialUrl.replace("%3A", ":");
+  			var finalUrl = replaceInitialUrl.replace(/%2F/g, "/");
+  			
+  			if(ValidURL(finalUrl)){	
+  			var map = new google.maps.Map(document.getElementById('map'), {
+  		          zoom: 15,
+  		          center: {lat: 28.613939, lng: 77.209021}
+  		        });
+  		         var ctaLayer = new google.maps.KmlLayer({
+  		        	 //url: 'https://raw.githubusercontent.com/ankitrlps/DroneForensics/master/2017-06-14%2019-53-29.kml',
+  		        	 //url: 'https://raw.githubusercontent.com/ankitrlps/DroneForensics/master/2017-06-14%2019-53-29.kml', //- 3DR Solo
+  		        	 //url: 'https://raw.githubusercontent.com/ankitrlps/DroneForensics/master/Test_DJI_logs.kml', //- DJI Phantom 4,
+  		        	 //url: 'https://raw.githubusercontent.com/ankitrlps/DroneForensics/master/Telemetry00010.kml', // Typhoon H
+  		        	 //url: 'https://raw.githubusercontent.com/ankitrlps/DroneForensics/blob/master/Kml_file_New.kml',
+  		        	 url: finalUrl,
+  		          map: map
+  		        });
+  			} else{
+  				alert("Error processing entered URL. Please check the URL you enter.");
+  			}
+  		} 
+    </script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy-Dsz3l3FuCDd44pc28W2z-T-SrXfMss&callback=initMap">
+    </script>
+</body>
+</html>
