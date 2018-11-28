@@ -47,14 +47,10 @@ public class ModelRotationController {
 
 	@FXML
 	Button startButton, pauseButton, stopButton;
-	// Group modelGroup;
 	FileChooser fileChooser = new FileChooser();
 	String filePath;
 	CSVReader reader = null;
 	TdsModelImporter model = new TdsModelImporter();
-	// Text text = new Text();
-	// ArrayList<Double> an = new ArrayList<>();
-	// Group modelGroup;
 
 	private final Rotate cameraXRotate = new Rotate(0, 0, 0, 0, Rotate.X_AXIS);
 	private final Rotate cameraYRotate = new Rotate(0, 0, 0, 0, Rotate.Y_AXIS);
@@ -74,7 +70,6 @@ public class ModelRotationController {
 				reader = new CSVReader(new FileReader(filePath), ',', '\'', 2);
 
 				String[] column = null;
-				// String[] splitDateTime = null;
 				List<DjiParameters> paramValues = new ArrayList<DjiParameters>();
 				while ((column = reader.readNext()) != null) {
 					DjiParameters params = new DjiParameters(column[0], column[1], column[2], column[3], column[4],
@@ -130,7 +125,7 @@ public class ModelRotationController {
 
 	private Group show3D() {
 		try {
-			URL modelUrl = this.getClass().getResource("/dji/tds/hst.3ds");
+			URL modelUrl = this.getClass().getResource("/dforensics/dji/tds/hst.3ds");
 			model.read(modelUrl);
 		} catch (ImportException e) {
 			System.out.println("Error importing obj model: " + e.getMessage());
@@ -195,9 +190,7 @@ public class ModelRotationController {
 			double rollValue = Double.parseDouble(listValues.getOsdRoll());
 			double pitchValue = Double.parseDouble(listValues.getOsdPitch());
 			double yawValue = Double.parseDouble(listValues.getOsdYaw());
-			// calc(modelGroup, rollValue, pitchValue,
-			// yawValue);
-
+			
 			double A11 = Math.cos(rollValue) * Math.cos(yawValue);
 			double A12 = Math.cos(pitchValue) * Math.sin(rollValue)
 					+ Math.cos(rollValue) * Math.sin(pitchValue) * Math.sin(yawValue);

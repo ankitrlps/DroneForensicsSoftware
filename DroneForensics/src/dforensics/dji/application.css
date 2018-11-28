@@ -2,7 +2,6 @@
 
 .button{
 	-fx-background-color: linear-gradient(#ff5400, #be1d00);
-    
     -fx-color: white;
     -fx-padding: 10px 15px;
     -fx-font-size: 15px;
