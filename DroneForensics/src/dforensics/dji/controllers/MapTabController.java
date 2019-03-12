@@ -16,7 +16,7 @@ public class MapTabController {
 	
 	DJIMainController djiMainController;
 	
-	final static String htmlFile = "/dji/html/kmlMap.html";
+	final static String htmlFile = "/dforensics/dji/html/kmlMap.html";
 	
 	public void openMaps(String kmlFilePath) {
 		WebEngine engine = webView.getEngine();
