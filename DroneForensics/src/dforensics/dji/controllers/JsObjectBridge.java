@@ -10,7 +10,6 @@ public class JsObjectBridge {
 	public JsObjectBridge(WebEngine engine, String kmlPath) {
 		this.engine = engine;
 		this.kmlPath = kmlPath;
-		//System.out.println(kmlPath);
 	}
 
 	public void start() {

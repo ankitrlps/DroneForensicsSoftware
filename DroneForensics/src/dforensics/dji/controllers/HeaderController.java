@@ -9,6 +9,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -133,6 +134,8 @@ public class HeaderController {
 				
 				djiMainController.getListForSat(paramValues);
 				
+				List<DjiParameters> photoValues = paramValues.stream().filter(i -> i.getIsPhoto().equalsIgnoreCase("Yes")).collect(Collectors.toList());
+				List<DjiParameters> videoValues = paramValues.stream().filter(j -> j.getIsVideo().equals("Recording")).collect(Collectors.toList());
 				
 			} catch (IOException io) {
 				Logger.getLogger(HeaderController.class.getName()).log(Level.SEVERE, null, io);
@@ -158,7 +161,7 @@ public class HeaderController {
 	private void convertCSVToKML(ActionEvent event) {
 		
 		FileChooser fileChooser = new FileChooser();
-		fileChooser.setInitialFileName("kmlSave.kml");
+		fileChooser.setInitialFileName("Drone-Flight-Path.kml");
 		fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("KML files", "*.kml"));
 		File fileSave = fileChooser.showSaveDialog(null);
 		

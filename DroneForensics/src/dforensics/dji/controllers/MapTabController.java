@@ -25,7 +25,7 @@ public class MapTabController {
 		
 		engine.getLoadWorker().stateProperty().addListener(new ChangeListener<State>() {
 			public void changed(ObservableValue<? extends State> observable, State oldValue, State newValue) {
-				if(newValue== State.SUCCEEDED){
+				if(newValue == State.SUCCEEDED){
 					//engine.executeScript("initMap('"+kmlFilePath+"')");
 					JSObject win = (JSObject) engine.executeScript("window");
 					win.setMember("javaObj", new JsObjectBridge(engine, kmlFilePath));
